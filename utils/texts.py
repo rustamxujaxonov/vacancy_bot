@@ -50,7 +50,7 @@ def payment_instructions_text() -> str:
         f"Summasi: <b>{PAYMENT_AMOUNT}</b>\n"
         f"Karta raqami: <code>{CARD_NUMBER}</code>\n"
         f"Karta egasi: <b>{CARD_OWNER}</b>\n\n"
-        f"Eslatma to'lovni qilib bo'lgach arizangiz tekshiriladi agar muammo bo'lsa to'lov qaytariladi aloqa uchun admin @dontrustamf"
+        f"Eslatma to'lovni qilib bo'lgach arizangiz tekshiriladi agar muammo bo'lsa to'lov qaytariladi aloqa uchun admin @dontrustamf\n"
         "To'lovni amalga oshirgach, chek (skrinshot) rasmini shu yerga yuboring 👇"
     )
 
