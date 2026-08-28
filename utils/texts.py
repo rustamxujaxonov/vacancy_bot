@@ -22,9 +22,9 @@ HELP_TEXT = (
 )
 
 ASK_POSITION = "1️⃣ Lavozim nomini kiriting (masalan: Python dasturchi):"
-ASK_COMPANY = "2️⃣ Kompaniya nomini kiriting:"
+ASK_COMPANY = "2️⃣ Kompaniya nomini va manzilni kiriting (viloyat yoki shaxar) kiriting:"
 ASK_SALARY = "3️⃣ Maoshni kiriting (masalan: 5 000 000 - 8 000 000 so'm):"
-ASK_REQUIREMENTS = "4️⃣ Talablarni kiriting (tajriba, ko'nikmalar va h.k.):"
+ASK_REQUIREMENTS = "4️⃣ Talablarni kiriting (tajriba, ko'nikmalar, yosh chegarasi va h.k.):"
 ASK_CONTACT = "5️⃣ Aloqa uchun ma'lumot kiriting (telefon raqam yoki username):"
 
 CANCELLED_TEXT = "❌ Jarayon bekor qilindi. Qaytadan boshlash uchun /start bosing."
@@ -50,6 +50,7 @@ def payment_instructions_text() -> str:
         f"Summasi: <b>{PAYMENT_AMOUNT}</b>\n"
         f"Karta raqami: <code>{CARD_NUMBER}</code>\n"
         f"Karta egasi: <b>{CARD_OWNER}</b>\n\n"
+        f"Eslatma to'lovni qilib bo'lgach arizangiz tekshiriladi agar muammo bo'lsa to'lov qaytariladi aloqa uchun admin @dontrustamf"
         "To'lovni amalga oshirgach, chek (skrinshot) rasmini shu yerga yuboring 👇"
     )
 
@@ -83,5 +84,5 @@ def admin_caption_text(data: dict, user_id: int, username: str | None) -> str:
 APPROVED_USER_TEXT = "✅ Tabriklaymiz! Sizning vakansiyangiz tasdiqlandi va kanalga chop etildi."
 REJECTED_USER_TEXT = (
     "❌ Afsuski, sizning to'lovingiz yoki vakansiyangiz admin tomonidan rad etildi.\n"
-    "Savollar bo'lsa, administrator bilan bog'laning."
+    "Savollar bo'lsa, to'lovni qaytarmoqchi bo'lsangiz administrator bilan bog'laning. @dontrustamf"
 )
